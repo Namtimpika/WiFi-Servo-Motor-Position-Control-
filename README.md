@@ -1,6 +1,12 @@
 # WiFi-Servo-Motor-Position-Control-
-This project focuses on the design and implementation of a servo motor control system that integrates embedded programming, control theory, and wireless communication. The system analyzes the relationship between potentiometer voltage and servo angle using a 10-bit Analog-to-Digital Converter (ADC) to obtain real-time feedback for control purposes.
+  This project is a wireless servo motor control system that integrates embedded programming, feedback control, and Python-based communication. The system uses a 10-bit ADC to measure potentiometer voltage from the servo motor and provide real-time angle feedback. A closed-loop Proportional (P) controller is implemented to regulate servo position, with controller gain tuned experimentally to improve system stability and response.
+  The system communicates wirelessly using an ESP8266 operating in WiFi Access Point (AP) mode with a custom communication protocol. A Python-based client is used to send control commands, adjust controller parameters, and receive feedback, enabling flexible wireless control and automated testing. System performance is evaluated using linear regression analysis to analyze errors caused by ADC nonlinearity and noise.
 
-A closed-loop Proportional (P) controller is implemented to regulate the servo position based on feedback data. The controller gain is tuned experimentally to improve control stability, responsiveness, and accuracy. To evaluate system performance, linear regression analysis is applied to quantify errors caused by ADC nonlinearity, resolution limitations, and noise.
-
-In addition, the project includes the design of a custom WiFi communication protocol operating in Access Point (AP) mode, enabling wireless control and monitoring of the servo motor without relying on external network infrastructure. This project demonstrates practical application of control systems, signal analysis, and embedded system design, while providing hands-on experience in integrating hardware, software, and wireless communication.
+->Key Knowledge & Skills Applied
+  - Embedded programming using Arduino / ESP8266
+  - Closed-loop P control with real-time feedback
+  - ADC signal analysis and potentiometer-based angle measurement
+  - Controller gain tuning for stability and response improvement
+  - Custom WiFi (AP mode) communication protocol
+  - Python-based client development for system control
+  - Linear regression analysis for error evaluation
