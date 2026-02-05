@@ -1,2 +1,6 @@
 # WiFi-Servo-Motor-Position-Control-
-A servo motor control project involving ADC-based angle measurement, closed-loop P control, and custom WiFi (AP mode) communication, with performance evaluation using linear regression to analyze ADC nonlinearity and noise effects.
+This project focuses on the design and implementation of a servo motor control system that integrates embedded programming, control theory, and wireless communication. The system analyzes the relationship between potentiometer voltage and servo angle using a 10-bit Analog-to-Digital Converter (ADC) to obtain real-time feedback for control purposes.
+
+A closed-loop Proportional (P) controller is implemented to regulate the servo position based on feedback data. The controller gain is tuned experimentally to improve control stability, responsiveness, and accuracy. To evaluate system performance, linear regression analysis is applied to quantify errors caused by ADC nonlinearity, resolution limitations, and noise.
+
+In addition, the project includes the design of a custom WiFi communication protocol operating in Access Point (AP) mode, enabling wireless control and monitoring of the servo motor without relying on external network infrastructure. This project demonstrates practical application of control systems, signal analysis, and embedded system design, while providing hands-on experience in integrating hardware, software, and wireless communication.
