@@ -10,3 +10,50 @@
   - Custom WiFi (AP mode) communication protocol
   - Python-based client development for system control
   - Linear regression analysis for error evaluation
+
+Hardware
+--------
+Microcontroller: ESP8266 NodeMCU V2
+
+Actuator: Servo Motor (0–180 degrees)
+
+Feedback: Internal Potentiometer
+
+Other Components: Push button, breadboard, wiring
+
+Software
+--------
+Development Platform: Arduino IDE
+
+Communication: WiFi (Access Point mode)
+
+Client Tools:
+TCP/IP Builder
+
+Python Client (custom protocol)
+
+System Operation
+----------------
+ESP8266 operates as a WiFi Access Point (AP)
+
+Client sends commands to ESP8266 via WiFi
+
+Servo motor angle is controlled using PWM
+
+Potentiometer feedback is read via ADC
+
+A P Controller calculates the control signal based on position error
+
+Control & Communication
+-----------------------
+Custom communication protocol (5 bytes per packet)
+
+Supported commands:
+
+P – Set servo position
+
+G – Adjust control gain
+
+R – Read current servo position
+
+Feedback data is sent back to the client for monitoring and analysis
